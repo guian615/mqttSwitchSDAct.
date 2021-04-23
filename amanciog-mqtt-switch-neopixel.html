@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQTT</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="amanciog-mqtt-switch-neopixel.css">
+</head>
+<body>
+    <div class="col-sm-12">
+        <h1 class="text-primary">MQTT Switch</h1>
+        <h4 class="text-primary" id='status-header'>Connecting to broker...</h4>
+        <div>
+        <div class="form-group container">
+            <div class="row">
+                <h4 class="text-success">Switch for NeoPixel at Index 0</h4>
+            </div>
+            <div class="row">
+                <Rounded switch>
+                    <label class="switch">
+                        <input type="checkbox" id="pub0-switch">
+                        <span class="slider round"></span>
+                    </label>
+                </Rounded>
+            </div>
+            <div class="row ">
+                <h4 class="text-danger">Switch for NeoPixel at Index 1</h4>
+            </div>
+            <div class="row">
+                <Rounded switch>
+                    <label class="switch">
+                        <input type="checkbox" id="pub1-switch">
+                        <span class="slider round"></span>
+                    </label>
+                </Rounded>
+            </div>
+            <div class="row">
+                <h4 class="text-warning">Switch for NeoPixel at Index 2</h4>
+            </div>
+            <div class="row">
+                <Rounded switch>
+                    <label class="switch">
+                        <input type="checkbox" id="pub2-switch">
+                        <span class="slider round"></span>
+                    </label>
+                </Rounded>
+            </div>
+            <!-- <div class="row">
+                <Rounded switch>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </Rounded>
+            </div> -->
+        </div>
+    </div>
+</body>
+<script src="./browserMqtt.js"></script>
+<script src="./amanciog-mqtt-switch-neopixel.js"></script>
+</html>
